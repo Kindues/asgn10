@@ -8,14 +8,13 @@
     <title>asgn10</title>
 </head>
 <body>
-
 <ul>
     <?php foreach($tasks as $task) : ?>
         <li>
             <?php if ($task->completed) : ?>
-                <strike><?= $task->description ?></strike>
+                <strike><?= $task->description; ?></strike>
             <?php else : ?>
-                <?= $task->description ?>     
+                <?= $task->description; ?>     
             <?php endif; ?>
         </li>
 
